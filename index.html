@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Oswald:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Cheat Sheet</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS selectors and specificity</h1>
+      <h2>CSS selectors</h2>
+    </header>
+    <main>
+      <table class="center" style="width: 60%">
+        <thead id="head">
+          <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th colspan="2">Discription</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.class</td>
+            <td>.PaintColor</td>
+            <td>Selects all elements with class=.PaintColor</td>
+          </tr>
+          <tr>
+            <td>#id</td>
+            <td>#firstname</td>
+            <td>Selects the element with id="firstname"</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>Selects all elements</td>
+          </tr>
+          <tr>
+            <td>element</td>
+            <td>p</td>
+            <td>Selects all&lt;p&gt;elements</td>
+          </tr>
+          <tr>
+            <td>element.class</td>
+            <td>p.intro</td>
+            <td>Selects all&lt;p&gt;elements with class="intro"</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>element,element</td>
+            <td>div, p</td>
+            <td>Selects all&lt;div&gt;elements and all&lt;p&gt;elements</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <br />
+      <table class="center" class="Specificity" style="width: 60%;">
+        <h2>CSS Specificity</h2>
+        <p>
+          What is Specificity? If there are two or more conflicting CSS rules
+          <br />
+          that point to the same element, the browser follows some rules to br
+          <br />
+          determine which one is most specific and therefore wins out. Think of
+          <br />
+          specificity as a score/rank that determines which style declarations
+          are ultimately applied to an element. <br />The universal
+          selector&lt;p&gt; has low specificity, while ID selectors are highly
+          specific!
+        </p>
+        <thead>
+          <tr>
+            <th>Specificity Priority</th>
+            <th>Example</th>
+            <th colspan="2">Discription</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inline styles</td>
+            <td>&lt;h1 style="color:&gt;</td>
+            <td>
+              An inline style is attached directly to the element to be styled.
+            </td>
+          </tr>
+          <tr>
+            <td>IDs</td>
+            <td>#navbar</td>
+            <td>An ID is a unique identifier for the page elements</td>
+          </tr>
+          <tr>
+            <td>Classes</td>
+            <td>classes</td>
+            <td>
+              This category includes .classes, [attributes] and pseudo-classes
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Elements</td>
+            <td>h1, div,p...</td>
+            <td>This category includes element names and pseudo-elements</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>
